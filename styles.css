@@ -1,0 +1,78 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4; /* Definindo a mesma cor de fundo do body */
+}
+
+header {
+  background-color: #4f66b1;
+  width: 100%;
+  height: 80px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 25px;
+  margin-bottom: 20px;
+}
+
+.card-with-top-line {
+  position: relative; /* Para posicionar a linha colorida dentro deste card */
+}
+
+.card-top-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px; /* Altura da linha colorida */
+  background-color: #4f66b1; /* Cor da linha colorida */
+  border-radius: 8px 8px 0 0; /* Para bordas arredondadas apenas no topo */
+}
+
+.label-container {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px; 
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4f66b1;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6b7cb1;
+}
+
+footer {
+  padding: 10px;
+}
