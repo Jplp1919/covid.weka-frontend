@@ -35,7 +35,7 @@ $row = mysqli_fetch_assoc($result);
 if ($result->field_count > 0) {
 
 $TemCovid = $row['TemCovid'];
-$Porcentagem = $row['Porcentagem'];
+$Porcentagem = number_format((float)$row['Porcentagem'], 2);
 
  if ($TemCovid == 0){
    $Prediction = "Negativo";
@@ -48,7 +48,7 @@ $Porcentagem = $row['Porcentagem'];
 }
 
 } else {
-    echo "0 results";
+    echo "Sem resultado";
 }
 
 ?>
